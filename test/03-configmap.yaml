@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-test
+  namespace: argocd-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
+data:
+  foo: "bar"
+  test: "example"
