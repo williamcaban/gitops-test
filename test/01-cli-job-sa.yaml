@@ -24,12 +24,10 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: cli-job-sa
-    namespace: argocd-test
+    namespace: default
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: cli-job-sa
-  namespace: argocd-test
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
+  namespace: default
