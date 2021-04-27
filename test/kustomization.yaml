@@ -4,6 +4,6 @@ kind: Kustomization
 
 resources:
 - 01-cli-job-sa.yaml
-- 02-hook.yaml
+#- 02-hook.yaml
 - 00-create-ns.yaml
 - 03-configmap.yaml
