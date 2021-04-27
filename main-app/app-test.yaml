@@ -9,7 +9,7 @@ spec:
   project: default
   destination:
     name: ''
-    server: 'mycluster'
+    server: 'https://api.ocp4poc.lab.shift.zone:6443'
   # Source of the application manifests
   source:
     repoURL: 'https://github.com/williamcaban/gitops-test.git'
