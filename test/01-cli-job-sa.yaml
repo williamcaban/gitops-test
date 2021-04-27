@@ -1,8 +1,6 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "1"
   name: cli-job-sa-role
 rules:
   - apiGroups:
@@ -26,10 +24,12 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: cli-job-sa
-    namespace: argocd
+    namespace: argocd-test
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: cli-job-sa
   namespace: argocd-test
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
