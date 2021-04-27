@@ -7,3 +7,4 @@ resources:
 #- 02-hook.yaml
 - 00-create-ns.yaml
 - 03-configmap.yaml
+- 04-sample-pod.yaml
